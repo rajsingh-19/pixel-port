@@ -1,0 +1,101 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    background-color: #333;
+    color: #e5e7eb;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: sticky;
+    top: 0;
+    height: 100px;
+}
+.navbarLogo {
+    width: 25%;
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 600;
+    padding-left: 20px;
+    color: #2563eb;
+}
+.searchContainer {
+    width: 75%;
+    text-align: right;
+    padding-right: 40px;
+}
+.searchContainer input {
+    width: 50%;
+    font-size: 1.25rem;
+    color: #f8fafc;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #facc15;
+}
+.searchContainer input:focus {
+    outline: none;
+}
+.searchContainer ::placeholder {
+    border: none;
+    color: #94a3b8;
+    font-family: "Roboto", sans-serif;
+}
+.searchContainer span {
+    cursor: pointer;
+}
+/*      --Adding responsiveness--       */
+@media (min-width: 300px) and (max-width: 575px) {
+    .navbarLogo {
+        font-size: 1.75rem;
+    }
+    .searchContainer {
+        padding-right: 20px;
+    }
+    .searchContainer input {
+        font-size: .75rem;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    .navbarLogo {
+        font-size: 2rem;
+    }
+    .searchContainer {
+        padding-right: 20px;
+    }
+    .searchContainer input {
+        font-size: 1rem;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbarLogo {
+        font-size: 2.5rem;
+    }
+    .searchContainer {
+        padding-right: 30px;
+    }
+    .searchContainer input {
+        font-size: 1,1rem;
+    }
+}
+@media (min-width: 992px) and (max-width: 1024px) {
+    .navbarLogo {
+        font-size: 2.75rem;
+    }
+    .searchContainer {
+        padding-right: 40px;
+    }
+    .searchContainer input {
+        font-size: 1.2rem;
+    }
+}
+@media (min-width: 1025px) {
+    .navbarLogo {
+        font-size: 3rem;
+    }
+    .searchContainer {
+        padding-right: 40px;
+    }
+    .searchContainer input {
+        font-size: 1.25rem;
+    }
+}

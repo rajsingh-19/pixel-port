@@ -1,0 +1,252 @@
+.photosContainer {
+    width: 100%;
+    background-color: #2e3032;
+    padding: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 160px;
+}
+.photoCard {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin-bottom: 40px;
+    border: 1px solid #fef2f2;
+}
+.cardImgContainer {
+    height: 450px;
+}
+.cardImg {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}   
+.cardImg:hover {
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(82, 80, 80, 0.5);
+    border: 2px solid #ac0ef6;
+    border-radius: 10px;
+}
+.aboutImg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    height: 50px;
+    color: #f8fafc;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-top: -4px;
+}
+.aboutImg button {
+    height: 40px;
+    width: 40px;
+    border: 1px solid #facc15;
+    border-radius: 5px;
+    background-color: transparent;
+    color:aliceblue;
+    cursor: pointer;
+    transition: transform 0.3s linear;
+}
+.likeDiv {
+    float: left;
+    width: 60%;
+}
+.shareDownDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    float: right;
+    width: 40%;
+}
+.aboutImg button:hover {
+    transform: scale(1.1);
+}
+.aboutPhotographer {
+    font-size: 1.1rem;
+    padding: 10px;
+    color: #f8fafc;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.aboutPhotographer a {
+    text-decoration: none;
+    color: #16a34a;
+    padding-left: 5px;
+}
+/*      --Adding responsiveness--       */
+@media (min-width: 300px) and (max-width: 575px) {
+    .photosContainer { 
+        padding: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 10px;
+    }
+    .photoCard {
+        height: 262px;
+        width: 140px;
+        margin-bottom: 10px;
+    }
+    .cardImgContainer {
+        height: 200px;
+    }
+    .cardImg {
+        height: 170px;
+    }   
+    .cardImg:hover {
+        border-radius: 2px;
+    }
+    .aboutImg {
+        width: 100%;
+        height: 30px;
+        margin-top: -4px;
+    }
+    .aboutImg button {
+        height: 18px;
+        width: 40px;
+        border-radius: 2px;
+    }
+    .aboutPhotographer {
+        font-size: .75rem;
+        height: 60px;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    .photosContainer { 
+        padding: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 60px;
+    }
+    .photoCard {
+        height: 360px;
+        width: 250px;
+        margin-bottom: 15px;
+    }
+    .cardImgContainer {
+        height: 300px;
+    }
+    .cardImg {
+        height: 260px;
+    }   
+    .cardImg:hover {
+        border-radius: 2px;
+    }
+    .aboutImg {
+        height: 30px;
+        margin-top: -4px;
+    }
+    .aboutImg button {
+        height: 22px;
+        border-radius: 5px;
+    }
+    .aboutPhotographer {
+        font-size: 1rem;
+        height: 70px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .photosContainer { 
+        padding: 34px;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 80px;
+    }
+    .photoCard {
+        height: 400px;
+        width: 310px;
+        margin-bottom: 40px;
+    }
+    .cardImgContainer {
+        height: 340px;
+    }
+    .cardImg {
+        height: 300px;
+    }   
+    .cardImg:hover {
+        border-radius: 2px;
+    }
+    .aboutImg {
+        height: 40px;
+        margin-top: -4px;
+    }
+    .aboutImg button {
+        height: 25px;
+        border-radius: 5px;
+    }
+    .aboutPhotographer {
+        font-size: 1rem;
+        height: 60px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1024px) {
+    .photosContainer { 
+        padding: 46px;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 45px;
+    }
+    .photoCard {
+        height: 400px;
+        width: 270px;
+        margin-bottom: 40px;
+    }
+    .cardImgContainer {
+        height: 340px;
+    }
+    .cardImg {
+        height: 300px;
+    }   
+    .cardImg:hover {
+        border-radius: 2px;
+    }
+    .aboutImg {
+        height: 40px;
+        margin-top: -4px;
+    }
+    .aboutImg button {
+        height: 25px;
+        border-radius: 5px;
+    }
+    .aboutPhotographer {
+        font-size: 1rem;
+        height: 60px;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1250px) {
+    .photosContainer { 
+        padding: 12.5px;
+        column-gap: 50px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .photoCard {
+        width: 300px;
+        margin-bottom: 40px;
+    }
+}
+@media (min-width: 1251px) and (max-width: 1470px){
+    .photosContainer { 
+        padding: 40px;
+        column-gap: 50px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .photoCard {
+        width: 350px;
+        margin-bottom: 40px;
+    }
+    .cardImgContainer {
+        height: 450px;
+    }
+    .cardImg {
+        height: 400px;
+    }   
+    .aboutImg {
+        height: 50px;
+        margin-top: -4px;
+    }
+    .aboutImg button {
+        height: 40px;
+        width: 40px;
+        border-radius: 5px;
+    }
+    .aboutPhotographer {
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+}
